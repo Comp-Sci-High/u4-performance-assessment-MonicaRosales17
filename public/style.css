@@ -1,0 +1,46 @@
+/* https://chatgpt.com/share/67a17a77-bf08-800f-ac9b-d99e0e299518 */
+body {
+    font-family: 'Press Start 2P', cursive;
+    background: black;
+    color: white;
+    text-align: center;
+}
+
+header {
+    background: #1b1f3b;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.7);
+    text-transform: uppercase;
+    font-weight: bold;
+    color: red;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.7);
+    font-weight: bold;
+}
+
+.hero {
+    padding: 50px;
+    background: url('https://images.unsplash.com/photo-1583394838336-acd977736f90') no-repeat center center/cover;
+    color: red;
+    text-shadow: 3px 3px 8px rgba(255, 255, 255, 0.8);
+    font-style: italic;
+}
+
+#pic{
+    width : 80vw;
+}
