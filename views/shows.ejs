@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tour Page</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+<body class="p-6">
+    <header>
+        <h1>Found Heaven On Tour</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/docs.html">Docs</a></li>
+                <li><a href="/shows">Shows</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <% for(let i = 0; i < australia.length; i++){ %>
+        <div class="bg-white text-black rounded-xl overflow-hidden shadow-lg">
+            <img src= <%= australia[i].image %>  alt="City Name" class="pics">
+            <div class="p-4">
+                <h2 class="text-xl font-bold"><%= australia[i].city %></h2>
+                <p class="text-md"><%= australia[i].venue %></p>
+                <p class="text-sm text-gray-600"><%= australia[i].date %></p>
+                <a href= <%= australia[i].path %>>See it closely</a>
+            </div>
+        </div>
+        <% } %>
+     
+        <% for(let x = 0; x < asia.length; x++){ %>
+        <div class="bg-white text-black rounded-xl overflow-hidden shadow-lg">
+            <img src= <%= asia[x].image %> alt="City Name" class="pics">
+            <div class="p-4">
+                <h2 class="text-xl font-bold"><%= asia[x].city %></h2>
+                <p class="text-md"><%= asia[x].venue %></p>
+                <p class="text-sm text-gray-600"><%= asia[x].date %></p>
+                <a href= <%= asia[x].path %>>See it closely</a>
+            </div>
+        </div>
+        <% } %>
+        
+        <% for(let y = 0; y < northAmerica.length; y++){ %>
+        <div class="bg-white text-black rounded-xl overflow-hidden shadow-lg">
+            <img src= <%= northAmerica[y].image %> alt="City Name" class="pics">
+            <div class="p-4">
+                <h2 class="text-xl font-bold"><%= northAmerica[y].city %></h2>
+                <p class="text-md"><%= northAmerica[y].venue %></p>
+                <p class="text-sm text-gray-600"><%= northAmerica[y].date %></p>
+                <a href= <%= northAmerica[y].path %>>See it closely</a>
+            </div>
+        </div>
+        <% } %>
+        
+        <% for(let z = 0; z < europe.length; z++){ %>
+            <div class="bg-white text-black rounded-xl overflow-hidden shadow-lg">
+                <img src= <%= europe[z].image %> alt="City Name" class="pics">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold"><%= europe[z].city %></h2>
+                    <p class="text-md"><%= europe[z].venue %></p>
+                    <p class="text-sm text-gray-600"><%= europe[z].date %></p>
+                    <a href= <%= europe[z].path %>>See it closely</a>
+                </div>
+            </div>
+            <% } %>
+    </div>
+</body>
+</html>

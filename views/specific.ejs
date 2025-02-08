@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specific Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="p-6">
+    <center>
+    <header>
+        <h1>Found Heaven On Tour</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/docs.html">Docs</a></li>
+                <li><a href="/shows">Shows</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div class="bg-white text-black rounded-xl overflow-hidden shadow-lg">
+            <img src= <%= image %>  alt="City Name" class="pics">
+            <div class="p-4">
+                <h2 class="text-xl font-bold"><%= city %></h2>
+                <p class="text-md"><%= venue %></p>
+                <p class="text-sm text-gray-600"><%= date %></p>
+                <!-- <a href= <%= path %>>See it closely</a> -->
+            </div>
+        </div>
+        </div>
+    </center>
+</body>
+</html>
+
+<!-- https://chatgpt.com/share/67a17a77-bf08-800f-ac9b-d99e0e299518 -->

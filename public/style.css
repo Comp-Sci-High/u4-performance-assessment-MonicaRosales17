@@ -44,3 +44,8 @@ nav ul li a {
 #pic{
     width : 80vw;
 }
+
+.pics{
+    max-height: 100%;
+}
+
